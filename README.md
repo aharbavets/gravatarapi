@@ -1,4 +1,6 @@
-gravatrapi
+Gravatr API
 ==========
 
-A Symfony project created on February 13, 2016, 5:57 pm.
+3-rd Party Libraries
+----------
+* friendsofsymfony/rest-bundle - one of the most widely used libraries that enables REST API support in Symfony
