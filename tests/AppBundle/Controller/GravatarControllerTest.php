@@ -16,10 +16,10 @@ class GravatarControllerTest extends WebTestCase
         $client->request('GET', '/gravatr/');
         $this->assertEquals(404, $client->getResponse()->getStatusCode());
 
-        $crawler = $client->request('GET', '/gravatr/example@example.com');
+        $client->request('GET', '/gravatr/example@example.com');
         $this->assertEquals('http://www.gravatar.com/avatar/23463b99b62a72f26ed677cc556c44e8', $client->getResponse()->getContent());
 
-        $crawler = $client->request('GET', '/gravatr/example@example.net');
+        $client->request('GET', '/gravatr/example@example.net');
         $this->assertEquals('http://www.gravatar.com/avatar/993a9c97fc1c7035a555f512504a84e3', $client->getResponse()->getContent());
     }
 }
