@@ -1,0 +1,12 @@
+#!/bin/sh
+
+printenv PORT
+
+if "$PORT"==""
+then
+    PORT='8080'
+fi
+
+echo "Starting server on the port $PORT"
+
+bin/console server:start "127.0.0.1:$PORT"
