@@ -12,7 +12,7 @@ Endpoints
 
 Possible Improvements
 ----------
-* Add API versioning. E.g. `/api/v1/gravatr/{email}`, v2, v3 etc.
+* Add email validation in `/gravatr/{email}` and add corresponding test.
 
 Scripts
 ----------
